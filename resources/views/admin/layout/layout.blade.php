@@ -93,7 +93,7 @@
     <!-- END layout-wrapper -->
 
     <!-- JAVASCRIPT -->
-    <script src="{{ asset('public/assets/admin/libs/jquery/jquery.min.js') }}"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
     <script src="{{ asset('public/assets/admin/libs/bootstrap/js/bootstrap.bundle.min.js') }}"></script>
     <script src="{{ asset('public/assets/admin/libs/metismenu/metisMenu.min.js') }}"></script>
     <script src="{{ asset('public/assets/admin/libs/simplebar/simplebar.min.js') }}"></script>
