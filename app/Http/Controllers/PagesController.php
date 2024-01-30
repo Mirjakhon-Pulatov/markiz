@@ -6,6 +6,10 @@ use Illuminate\Http\Request;
 
 class PagesController extends Controller
 {
+    public function services()
+    {
+        return view('blocks.services');
+    }
     public function gallery()
     {
         return view('blocks.gallery');

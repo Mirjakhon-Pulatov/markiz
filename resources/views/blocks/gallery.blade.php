@@ -1,5 +1,5 @@
 @extends('layout.app')
-@section('css')
+@section('style')
 
     <link rel="stylesheet" href="{{ asset('public/asset/css/lightgallery.min.css') }}"/>
     <link rel="stylesheet" href="{{ asset('public/asset/css/lg-transitions.css') }}"/>

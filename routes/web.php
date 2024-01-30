@@ -26,6 +26,7 @@ Route::middleware('LogVisitorMiddleware')->group(function () {
     Route::get('/', function (){
         return view('index');
     });
+    Route::get('/services', [\App\Http\Controllers\PagesController::class, 'services'])->name('services');
     Route::get('/gallery', [\App\Http\Controllers\PagesController::class,'gallery'])->name('gallery');
     Route::get('/about', [\App\Http\Controllers\PagesController::class,'about'])->name('about');
     Route::get('/contact', [\App\Http\Controllers\PagesController::class, 'contact'])->name('contact');

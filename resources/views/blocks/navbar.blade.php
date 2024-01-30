@@ -64,7 +64,7 @@
                                             <li><a href="pest-control/index.htm"> pest control </a></li>
                                         </ul>
                                     </li>
-                                    <li><a href="#">Услуги</a></li>
+                                    <li><a href="{{ url('/services') }}">Услуги</a></li>
                                     <li><a href="{{ url('/gallery') }}" style="color: {{request()->is('gallery') ? '#FF7D27' : ''}}">Галерея</a></li>
                                     <li><a href="{{ url('/about') }}" style="color: {{request()->is('about') ? '#FF7D27' : ''}}">О нас</a></li>
                                     <li><a href="{{ url('/contact') }}" style="color: {{request()->is('contact') ? '#FF7D27' : ''}}">Контакты</a></li>

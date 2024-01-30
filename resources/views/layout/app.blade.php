@@ -13,7 +13,7 @@
     <title>Маркизы, перголы, шатры, зонты, навесы и тенты в Ташкенте.</title>
 
     @include('blocks.top-css')
-    @yield('css')
+    @yield('style')
 </head>
 
 <body>
