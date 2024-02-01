@@ -22,9 +22,9 @@
 <div class="page">
 
     <!-- preloader start -->
-    {{--    <div id="preloader">--}}
-    {{--        <div id="status">&nbsp;</div>--}}
-    {{--    </div>--}}
+        <div id="preloader">
+            <div id="status">&nbsp;</div>
+        </div>
     <!-- preloader end -->
 
     <!-- navbar start -->
