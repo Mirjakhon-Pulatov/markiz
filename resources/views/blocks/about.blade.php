@@ -1,6 +1,12 @@
 @extends('layout.app')
 @section('style')
-
+<style>
+    @media (max-width: 992px) {
+        #about_header {
+            margin-top: 50px;
+        }
+    }
+</style>
 @endsection
 @section('content')
     <!--site-main start-->
@@ -19,7 +25,7 @@
                     </div>
                     <div class="col-lg-7 col-sm-12">
                         <div class="section-title clearfix">
-                            <div class="title-header" style="margin-bottom: 12px;">
+                            <div class="title-header" id="about_header" style="margin-bottom: 12px;">
                                 <h2 class="title">О нас</h2>
                             </div>
                         </div><!-- section title end -->

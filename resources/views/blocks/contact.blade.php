@@ -1,5 +1,12 @@
 @extends('layout.app')
 @section('style')
+    <style>
+        @media (max-width: 980px) {
+            #contact_row {
+                margin-top: 100px;
+            }
+        }
+    </style>
 
 @endsection
 
@@ -19,7 +26,7 @@
 
         <section class="ttm-row pb-160 res-991-pb-100 clearfix">
             <div class="container">
-                <div class="row">
+                <div class="row" id="contact_row">
                     <div class="col-md-7 pr-60 res-767-pr-15">
                         <!-- section title -->
                         <div class="section-title with-desc clearfix">

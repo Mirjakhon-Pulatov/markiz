@@ -10,14 +10,17 @@ class PagesController extends Controller
     {
         return view('blocks.services');
     }
+
     public function gallery()
     {
         return view('blocks.gallery');
     }
+
     public function about()
     {
         return view('blocks.about');
     }
+
     public function contact()
     {
         return view('blocks.contact');

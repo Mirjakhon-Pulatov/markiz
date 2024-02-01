@@ -33,7 +33,6 @@
                     <div class="widget widget_nav_menu clearfix">
                         <h3 class="widget-title">Страницы</h3>
                         <ul id="menu-footer-services">
-                            <li><a href="#">Каталог</a></li>
                             <li><a href="{{ url('/services') }}">Услуги</a></li>
                             <li><a href="{{ url('/gallery') }}">Галерея</a></li>
                             <li><a href="{{ url('/about') }}">О нас</a></li>

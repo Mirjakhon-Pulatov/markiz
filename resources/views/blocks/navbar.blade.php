@@ -6,7 +6,7 @@
             <div class="ttm-topbar-content">
                 <ul class="top-contact ttm-bgcolor-darkgrey-left text-left">
                     <li><i class="fa fa-phone"></i><strong class="ttm-textcolor-skincolor">Ежедневно с 9:00 до 21:00:</strong> <span class="tel-no">
-                            +998 91 135-12-45, +998 91 135-00-71</span></li>
+                            <strong>+998 91 135-12-45, +998 91 135-00-71</strong></span></li>
                 </ul>
                 <div class="topbar-right text-right">
                     <ul class="top-contact">
@@ -64,7 +64,7 @@
                                             <li><a href="pest-control/index.htm"> pest control </a></li>
                                         </ul>
                                     </li>
-                                    <li><a href="{{ url('/services') }}">Услуги</a></li>
+                                    <li><a href="{{ url('/services') }}" style="color: {{request()->is('services') ? '#FF7D27' : ''}}">Услуги</a></li>
                                     <li><a href="{{ url('/gallery') }}" style="color: {{request()->is('gallery') ? '#FF7D27' : ''}}">Галерея</a></li>
                                     <li><a href="{{ url('/about') }}" style="color: {{request()->is('about') ? '#FF7D27' : ''}}">О нас</a></li>
                                     <li><a href="{{ url('/contact') }}" style="color: {{request()->is('contact') ? '#FF7D27' : ''}}">Контакты</a></li>
