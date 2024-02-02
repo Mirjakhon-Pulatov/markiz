@@ -3,9 +3,10 @@
     <link rel="stylesheet" href="{{ asset('public/asset/css/lightgallery.min.css') }}"/>
     <link rel="stylesheet" href="{{ asset('public/asset/css/lg-transitions.css') }}"/>
     <style>
-        body .site-main{
+        body .site-main {
             padding-top: 0px !important;
         }
+
         .picture {
             display: flex;
             flex-direction: row;
@@ -83,10 +84,10 @@
                         <div class="ttm-service-single-content-area">
                             <!-- section title -->
                             <div class="section-title without-sep-line clearfix">
-                                    @php
-                                        $body1 = html_entity_decode($service->body);
-                                        echo $body1;
-                                    @endphp
+                                @php
+                                    $body1 = html_entity_decode($service->body);
+                                    echo $body1;
+                                @endphp
                             </div><!-- section title end -->
                             @php
                                 $images = \Illuminate\Support\Facades\DB::select("Select * from extra_images where `code` = '$service->id' ");

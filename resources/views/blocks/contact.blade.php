@@ -31,7 +31,6 @@
                         <!-- section title -->
                         <div class="section-title with-desc clearfix">
                             <div class="title-header">
-                                {{--                                <h5>GET IN TOUCH</h5>--}}
                                 <h2 class="title">Форма обратной связи</h2>
                             </div>
                             <div class="title-desc">Производим и устанавливаем
