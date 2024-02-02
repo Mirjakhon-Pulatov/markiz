@@ -18,23 +18,18 @@ use App\Http\Middleware\LogVisitorMiddleware;
 
 Route::middleware('LogVisitorMiddleware')->group(function () {
 
-
-//    Route::get('/', function () {
-//        return view('admin.mainpage');
-//    });
-
-    Route::get('/', function (){
+    Route::get('/', function () {
         return view('index');
     });
+    Route::get('/catalog/{slug}', [\App\Http\Controllers\PagesController::class, 'catalog'])->name('catalog');
     Route::get('/services', [\App\Http\Controllers\PagesController::class, 'services'])->name('services');
-    Route::get('/gallery', [\App\Http\Controllers\PagesController::class,'gallery'])->name('gallery');
-    Route::get('/about', [\App\Http\Controllers\PagesController::class,'about'])->name('about');
+    Route::get('/gallery', [\App\Http\Controllers\PagesController::class, 'gallery'])->name('gallery');
+    Route::get('/about', [\App\Http\Controllers\PagesController::class, 'about'])->name('about');
     Route::get('/contact', [\App\Http\Controllers\PagesController::class, 'contact'])->name('contact');
-    Route::post('/contact_form', [\App\Http\Controllers\PagesController::class,'contact_form'])->name('contact_form');
+    Route::post('/contact_form', [\App\Http\Controllers\PagesController::class, 'contact_form'])->name('contact_form');
 
 
 });
-
 
 Route::get('/admin/login', function () {
     return view('admin.login');

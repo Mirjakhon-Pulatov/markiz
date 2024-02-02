@@ -5,7 +5,8 @@
         <div class="container">
             <div class="ttm-topbar-content">
                 <ul class="top-contact ttm-bgcolor-darkgrey-left text-left">
-                    <li><i class="fa fa-phone"></i><strong class="ttm-textcolor-skincolor">Ежедневно с 9:00 до 21:00:</strong> <span class="tel-no">
+                    <li><i class="fa fa-phone"></i><strong class="ttm-textcolor-skincolor">Ежедневно с 9:00 до
+                            21:00:</strong> <span class="tel-no">
                             <strong>+998 91 135-12-45, +998 91 135-00-71</strong></span></li>
                 </ul>
                 <div class="topbar-right text-right">
@@ -56,18 +57,36 @@
                                     <span class="toggle-block toggle-blocks-3"></span>
                                 </label>
                             </div>
+
+
                             <nav id="menu" class="menu">
+
                                 <ul class="dropdown">
-                                    <li><a href="index.html" style="color: {{request()->is('') ? 'orange' : ''}}">Каталог</a>
-                                        <ul>
-                                            <li><a href="plumber/index.htm"> plumber </a></li>
-                                            <li><a href="pest-control/index.htm"> pest control </a></li>
-                                        </ul>
+                                    <li>
+                                        <a style="color: {{request()->is('') ? 'orange' : ''}}; cursor: pointer">Каталог</a>
+                                        @php
+                                            $services = \Illuminate\Support\Facades\DB::select("Select `id`,`title`,`slug` from services");
+                                        @endphp
+                                        @if( count($services) > 1 )
+                                            <ul>
+                                                @foreach($services as $service)
+                                                    <li class="@if(request()->route('slug') == $service->slug){{ "active" }} @endif">
+                                                        <a href="{{ route('catalog', ['slug' => $service->slug]) }}">{{ $service->title }}</a>
+                                                    </li>
+                                                @endforeach
+                                            </ul>
+                                        @endif
+
                                     </li>
-                                    <li><a href="{{ url('/services') }}" style="color: {{request()->is('services') ? '#FF7D27' : ''}}">Услуги</a></li>
-                                    <li><a href="{{ url('/gallery') }}" style="color: {{request()->is('gallery') ? '#FF7D27' : ''}}">Галерея</a></li>
-                                    <li><a href="{{ url('/about') }}" style="color: {{request()->is('about') ? '#FF7D27' : ''}}">О нас</a></li>
-                                    <li><a href="{{ url('/contact') }}" style="color: {{request()->is('contact') ? '#FF7D27' : ''}}">Контакты</a></li>
+                                    <li><a href="{{ url('/services') }}"
+                                           style="color: {{request()->is('services') ? '#FF7D27' : ''}}">Услуги</a></li>
+                                    <li><a href="{{ url('/gallery') }}"
+                                           style="color: {{request()->is('gallery') ? '#FF7D27' : ''}}">Галерея</a></li>
+                                    <li><a href="{{ url('/about') }}"
+                                           style="color: {{request()->is('about') ? '#FF7D27' : ''}}">О нас</a></li>
+                                    <li><a href="{{ url('/contact') }}"
+                                           style="color: {{request()->is('contact') ? '#FF7D27' : ''}}">Контакты</a>
+                                    </li>
                                 </ul>
                             </nav>
                         </div><!-- site-navigation end-->

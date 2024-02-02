@@ -8,7 +8,7 @@ h3,
 h4,
 h5,
 h6,
-strong {
+strong, span, div{
     font-family: 'Montserrat', sans-serif !important;
 }
 
@@ -2637,7 +2637,6 @@ ul li .icon-box.icon-style-border i {
 
 .ttm-page-title-row {
     position: relative;
-    background-image: url(../images/ttm-pagetitle-bg.jpg);
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
@@ -3651,7 +3650,7 @@ article.ttm-blog-classic .ttm-blog-classic-box-content {
 }
 
 section.error-404 {
-    padding: 150px 0;
+    padding: 70px 0;
     text-align: center;
 }
 
