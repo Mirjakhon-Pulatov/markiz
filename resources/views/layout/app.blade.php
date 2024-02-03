@@ -2,16 +2,7 @@
 <html lang="en">
 
 <head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="keywords" content="Маркизы, перголы, шатры, зонты, навесы и тенты в Ташкенте">
-    <meta name="keywords"
-          content="Маркизы, перголы, шатры, зонты, навесы и тенты в Ташкенте">
-    <meta name="description" content="Маркизы, перголы, шатры, зонты, навесы и тенты в Ташкенте">
-    <meta name="author" content="https://www.markiz.uz/">
-    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-    <title>Маркизы, перголы, шатры, зонты, навесы и тенты в Ташкенте.</title>
-
+    @yield('seo')
     @include('blocks.top-css')
     @yield('style')
 </head>
@@ -22,9 +13,9 @@
 <div class="page">
 
     <!-- preloader start -->
-        <div id="preloader">
-            <div id="status">&nbsp;</div>
-        </div>
+    <div id="preloader">
+        <div id="status">&nbsp;</div>
+    </div>
     <!-- preloader end -->
 
     <!-- navbar start -->

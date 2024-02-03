@@ -1,4 +1,33 @@
 @extends('layout.app')
+@section('seo')
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="keywords" content="Маркизы, перголы, шатры, зонты, навесы и тенты в Ташкенте">
+    <meta name="keywords"
+          content="Маркизы, перголы, шатры, зонты, навесы и тенты в Ташкенте">
+    <meta name="description" content="Маркизы, перголы, шатры, зонты, навесы и тенты в Ташкенте">
+    <meta name="author" content="https://www.markiz.uz/">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <title>Каталог | Markiz.uz</title>
+
+    <!-- Facebook Meta Tags -->
+    <meta property="og:url" content="https://www.markiz.uz">
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Маркизы, перголы, шатры, зонты, навесы и тенты в Ташкенте.">
+    <meta property="og:description" content="Маркизы, перголы, шатры, зонты, навесы и тенты в Ташкенте">
+    <meta property="og:image" content="{{ asset('public/asset/images/site-icon.png') }}">
+
+    <!-- Twitter Meta Tags -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta property="twitter:domain" content="markiz.uz">
+    <meta property="twitter:url" content="https://www.markiz.uz">
+    <meta name="twitter:title" content="Маркизы, перголы, шатры, зонты, навесы и тенты в Ташкенте.">
+    <meta name="twitter:description" content="Маркизы, перголы, шатры, зонты, навесы и тенты в Ташкенте
+    ">
+    <meta name="twitter:image" content="{{ asset('public/asset/images/site-icon.png') }}">
+
+    <!-- Meta Tags Generated via https://www.opengraph.xyz -->
+@endsection
 @section('style')
     <link rel="stylesheet" href="{{ asset('public/asset/css/lightgallery.min.css') }}"/>
     <link rel="stylesheet" href="{{ asset('public/asset/css/lg-transitions.css') }}"/>

@@ -1,4 +1,33 @@
 @extends('layout.app')
+@section('seo')
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="keywords" content="Маркизы, перголы, шатры, зонты, навесы и тенты в Ташкенте">
+    <meta name="keywords"
+          content="Маркизы, перголы, шатры, зонты, навесы и тенты в Ташкенте">
+    <meta name="description" content="Маркизы, перголы, шатры, зонты, навесы и тенты в Ташкенте">
+    <meta name="author" content="https://www.markiz.uz/">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <title>Маркизы, перголы, шатры, зонты, навесы и тенты в Ташкенте.</title>
+
+    <!-- Facebook Meta Tags -->
+    <meta property="og:url" content="https://www.markiz.uz">
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Маркизы, перголы, шатры, зонты, навесы и тенты в Ташкенте.">
+    <meta property="og:description" content="Маркизы, перголы, шатры, зонты, навесы и тенты в Ташкенте">
+    <meta property="og:image" content="{{ asset('public/asset/images/site-icon.png') }}">
+
+    <!-- Twitter Meta Tags -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta property="twitter:domain" content="markiz.uz">
+    <meta property="twitter:url" content="https://www.markiz.uz">
+    <meta name="twitter:title" content="Маркизы, перголы, шатры, зонты, навесы и тенты в Ташкенте.">
+    <meta name="twitter:description" content="Маркизы, перголы, шатры, зонты, навесы и тенты в Ташкенте
+    ">
+    <meta name="twitter:image" content="{{ asset('public/asset/images/site-icon.png') }}">
+
+    <!-- Meta Tags Generated via https://www.opengraph.xyz -->
+@endsection
 @section('style')
     <style>
         #cart {
@@ -120,7 +149,7 @@
                         Для офиса
                     </div>
 
-                    <div class="tp-caption tp-shape tp-shapewrapper tp-resizeme" id="slide-3-layer-8"
+                    <div class="tp-caption tp-shape tp-shapewrapper tp-resizeme ml-3 mr-3" id="slide-3-layer-8"
                          data-x="['left','left','center','center']" data-hoffset="['353','343','62','-473']"
                          data-y="['top','top','middle','middle']" data-voffset="['390','400','46','23']"
                          data-width="10" data-height="10" data-whitespace="nowrap"
@@ -180,7 +209,7 @@
                          data-frames='[{"delay":560,"speed":800,"frame":"0","from":"y:[-100%];z:0;rX:0deg;rY:0;rZ:0;sX:1;sY:1;skX:0;skY:0;","mask":"x:0px;y:0px;s:inherit;e:inherit;","to":"o:1;","ease":"Power0.easeIn"},{"delay":"wait","speed":300,"frame":"999","to":"opacity:0;","ease":"Power3.easeInOut"}]'
                          data-textalign="['inherit','inherit','inherit','inherit']" data-paddingtop="[0,0,0,0]"
                          data-paddingright="[0,0,0,0]" data-paddingbottom="[0,0,0,0]" data-paddingleft="[0,0,0,0]">
-                         уровень комфорта
+                        уровень комфорта
                     </div>
 
                     <div class="tp-caption tp-resizeme" id="slide-4-layer-11"
@@ -229,7 +258,7 @@
                        data-frames='[{"delay":1470,"speed":500,"frame":"0","from":"y:[100%];z:0;rX:0deg;rY:0;rZ:0;sX:1;sY:1;skX:0;skY:0;opacity:0;","mask":"x:0px;y:[100%];s:inherit;e:inherit;","to":"o:1;","ease":"Power0.easeIn"},{"delay":"wait","speed":300,"frame":"999","to":"opacity:0;","ease":"Power3.easeInOut"}]'
                        data-textalign="['inherit','inherit','inherit','inherit']" data-paddingtop="[20,20,15,12]"
                        data-paddingright="[30,30,25,20]" data-paddingbottom="[20,20,15,12]"
-                       data-paddingleft="[30,30,25,20]">Для контакты </a>
+                       data-paddingleft="[30,30,25,20]">Контакты </a>
 
                 </li>
             </ul>
@@ -387,7 +416,7 @@
                             <!-- ttm-box-view-overlay -->
                             <div class="ttm-box-view-overlay ttm-portfolio-box-view-overlay">
                                 <div class="ttm-box-view-content-inner">
-                                    <h3 class="featured-title" style="color: white"><a>Маркизы</a></h3>
+                                    <h3 class="featured-title" style="color: white"><a href="#">Маркизы</a></h3>
                                     <div class="featured-content featured-content-portfolio">
                                         <span class="category ">
                                             <p>
@@ -408,7 +437,7 @@
                             <!-- ttm-box-view-overlay -->
                             <div class="ttm-box-view-overlay ttm-portfolio-box-view-overlay">
                                 <div class="ttm-box-view-content-inner">
-                                    <h3 class="featured-title" style="color: white"><a>Переголы</a></h3>
+                                    <h3 class="featured-title" style="color: white"><a href="#">Переголы</a></h3>
                                     <div class="featured-content featured-content-portfolio">
                                         <span class="category ">
                                             <p>
@@ -429,7 +458,7 @@
                             <!-- ttm-box-view-overlay -->
                             <div class="ttm-box-view-overlay ttm-portfolio-box-view-overlay">
                                 <div class="ttm-box-view-content-inner">
-                                    <h3 class="featured-title" style="color: white"><a>Навесы</a></h3>
+                                    <h3 class="featured-title" style="color: white"><a href="#">Навесы</a></h3>
                                     <div class="featured-content featured-content-portfolio">
                                         <span class="category ">
                                             <p>
@@ -450,7 +479,7 @@
                             <!-- ttm-box-view-overlay -->
                             <div class="ttm-box-view-overlay ttm-portfolio-box-view-overlay">
                                 <div class="ttm-box-view-content-inner">
-                                    <h3 class="featured-title" style="color: white"><a>Уличные зонты</a></h3>
+                                    <h3 class="featured-title" style="color: white"><a href="#">Уличные зонты</a></h3>
                                     <div class="featured-content featured-content-portfolio">
                                         <span class="category ">
                                             <p>
@@ -471,7 +500,8 @@
                             <!-- ttm-box-view-overlay -->
                             <div class="ttm-box-view-overlay ttm-portfolio-box-view-overlay">
                                 <div class="ttm-box-view-content-inner">
-                                    <h3 class="featured-title" style="color: white"><a>Тентовые конструкции</a></h3>
+                                    <h3 class="featured-title" style="color: white"><a href="#">Тентовые конструкции</a>
+                                    </h3>
                                     <div class="featured-content featured-content-portfolio">
                                         <span class="category ">
                                             <p>
@@ -646,7 +676,8 @@
                                             <div class="ttm-box-view-content-inner">
                                                 <div class="featured-content featured-content-portfolio">
 
-                                                    <h2 class="featured-title"><a>Качество, <br> красота и надежность -
+                                                    <h2 class="featured-title"><a href="#">Качество, <br> красота и
+                                                            надежность -
                                                             <br> наши
                                                             приоритеты </a></h2>
                                                 </div>
@@ -667,7 +698,8 @@
                                         <div class="ttm-box-view-overlay ttm-portfolio-box-view-overlay">
                                             <div class="ttm-box-view-content-inner">
                                                 <div class="featured-content featured-content-portfolio">
-                                                    <h2 class="featured-title"><a>Все этапы <br> производства <br>
+                                                    <h2 class="featured-title"><a href="#">Все этапы <br> производства
+                                                            <br>
                                                             выполняем
                                                             <br> самостоятельно</a></h2>
                                                 </div>
@@ -689,7 +721,7 @@
                                             <div class="ttm-box-view-content-inner">
                                                 <div class="featured-content featured-content-portfolio">
 
-                                                    <h2 class="featured-title"><a>Оптимальные <br> сроки <br>
+                                                    <h2 class="featured-title"><a href="#">Оптимальные <br> сроки <br>
                                                             приготовление</a></h2>
                                                 </div>
                                             </div>
@@ -710,7 +742,8 @@
                                         <div class="ttm-box-view-overlay ttm-portfolio-box-view-overlay">
                                             <div class="ttm-box-view-content-inner">
                                                 <div class="featured-content featured-content-portfolio">
-                                                    <h2 class="featured-title"><a>Полный комплекс <br> сопутствующих
+                                                    <h2 class="featured-title"><a href="#">Полный комплекс <br>
+                                                            сопутствующих
                                                             услуг</a></h2>
                                                 </div>
                                             </div>
@@ -733,7 +766,8 @@
                                             <div class="ttm-box-view-content-inner">
                                                 <div class="featured-content featured-content-portfolio">
 
-                                                    <h2 class="featured-title"><a>Производства <br> позволяют нам <br>
+                                                    <h2 class="featured-title"><a href="#">Производства <br> позволяют
+                                                            нам <br>
                                                             предложить
                                                             лучшую <br> цену на рынке</a></h2>
                                                 </div>
@@ -755,7 +789,8 @@
                                             <div class="ttm-box-view-content-inner">
                                                 <div class="featured-content featured-content-portfolio">
 
-                                                    <h2 class="featured-title"><a>Профессиональный <br> монтаж различных
+                                                    <h2 class="featured-title"><a href="#">Профессиональный <br> монтаж
+                                                            различных
                                                             <br> типов маркиз
                                                         </a></h2>
                                                 </div>
