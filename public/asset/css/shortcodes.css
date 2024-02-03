@@ -1050,25 +1050,25 @@
     }
 }
 
-@-webkit-keyframes sonarEffect {
+/*@-webkit-keyframes sonarEffect {*/
 
-%
-{
-    opacity: .3
-}
-40
-%
-{
-    opacity: .5
-}
-100
-%
-{
-    -webkit-transform: scale(1.5)
-;
-    opacity: 0
-}
-}
+/*%*/
+/*{*/
+/*    opacity: .3*/
+/*}*/
+/*40*/
+/*%*/
+/*{*/
+/*    opacity: .5*/
+/*}*/
+/*100*/
+/*%*/
+/*{*/
+/*    -webkit-transform: scale(1.5)*/
+/*;*/
+/*    opacity: 0*/
+/*}*/
+/*}*/
 .ttm-icon {
     margin-bottom: 35px;
     display: inline-block;
