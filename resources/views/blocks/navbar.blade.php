@@ -81,8 +81,8 @@
                                     </li>
                                     <li><a href="{{ url('/services') }}"
                                            style="color: {{request()->is('services') ? '#FF7D27' : ''}}">Услуги</a></li>
-                                    <li><a href="{{ url('/gallery') }}"
-                                           style="color: {{request()->is('gallery') ? '#FF7D27' : ''}}">Галерея</a></li>
+                                    <li><a href="{{ url('/nashi-raboty') }}"
+                                           style="color: {{request()->is('gallery') ? '#FF7D27' : ''}}">Наши работы</a></li>
                                     <li><a href="{{ url('/about') }}"
                                            style="color: {{request()->is('about') ? '#FF7D27' : ''}}">О нас</a></li>
                                     <li><a href="{{ url('/contact') }}"

@@ -22,7 +22,7 @@ class PagesController extends Controller
         return view('blocks.services');
     }
 
-    public function gallery()
+    public function portfolio()
     {
         return view('blocks.gallery');
     }

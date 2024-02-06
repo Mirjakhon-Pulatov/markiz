@@ -23,7 +23,7 @@ Route::middleware('LogVisitorMiddleware')->group(function () {
     });
     Route::get('/catalog/{slug}', [\App\Http\Controllers\PagesController::class, 'catalog'])->name('catalog');
     Route::get('/services', [\App\Http\Controllers\PagesController::class, 'services'])->name('services');
-    Route::get('/gallery', [\App\Http\Controllers\PagesController::class, 'gallery'])->name('gallery');
+    Route::get('/nashi-raboty', [\App\Http\Controllers\PagesController::class, 'portfolio'])->name('portfolio');
     Route::get('/about', [\App\Http\Controllers\PagesController::class, 'about'])->name('about');
     Route::get('/contact', [\App\Http\Controllers\PagesController::class, 'contact'])->name('contact');
     Route::post('/contact_form', [\App\Http\Controllers\PagesController::class, 'contact_form'])->name('contact_form');
