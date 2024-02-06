@@ -29,8 +29,7 @@
     <!-- Meta Tags Generated via https://www.opengraph.xyz -->
 @endsection
 @section('style')
-    <link rel="stylesheet" href="{{ asset('public/asset/css/lightgallery.min.css') }}"/>
-    <link rel="stylesheet" href="{{ asset('public/asset/css/lg-transitions.css') }}"/>
+    <link rel="stylesheet" href="{{ asset('public/asset/lightGallery/css/lightgallery-bundle.css') }}"/>
     <style>
         body .site-main {
             padding-top: 0px !important;
@@ -129,14 +128,13 @@
                                 @endphp
                             @endforeach
                             <div class="content-inner mt-4">
-                                <div class="picture">
+                                <div class="picture" id="photos">
 
                                     @foreach($Images_files as $image_item)
                                         <a
                                             href="{{ asset('public/uploads/gallery/photos/'.$image_item) }}">
-                                            <img
-                                                src="{{ asset('public/uploads/gallery/thumbnails/'.$image_item) }}"
-                                                alt="image"></a>
+                                            <div style="background-image: url({{ asset('public/uploads/gallery/thumbnails/'.$image_item) }})" class="image_gall"></div>
+                                        </a>
                                     @endforeach
                                 </div>
                             </div>
@@ -151,15 +149,44 @@
 
     </div><!--site-main end-->
 
+    <style>
+        .image_gall{
+            width: 100%;
+            height: 250px;
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            margin: 5px auto;
+        }
+    </style>
+
 @endsection
 @section('scripts')
-    <script src="{{ asset('public/asset/js/lightgallery-all.min.js') }}"></script>
+    <script src="{{ asset('public/asset/lightGallery/js/lightgallery.min.js') }}"></script>
+    <script src="{{ asset('public/asset/lightGallery/js/lg-zoom.min.js') }}"></script>
+    <script src="{{ asset('public/asset/lightGallery/js/lg-thumbnail.min.js') }}"></script>
+    <script src="{{ asset('public/asset/lightGallery/js/lg-fullscreen.min.js') }}"></script>
+    <script src="{{ asset('public/asset/lightGallery/js/lg-autoplay.min.js') }}"></script>
     <script type="text/javascript">
-        $(document).ready(function () {
-            $('.picture').lightGallery({
-                mode: 'lg-slide-circular',
-                download: false
-            });
+
+        lightGallery(document.getElementById('photos'), {
+            plugins: [lgZoom,  lgFullscreen, lgAutoplay],
+
+            speed: 500,
+            // ... other settings
         });
+        // Предположим, что у вас есть элементы с классом 'photos'
+        // var elements = document.getElementById('photos');
+        //
+        // // Проходимся по элементам (предполагая, что их может быть несколько)
+        // Array.from(elements).forEach(function (element) {
+        //     lightGallery(element, {
+        //         plugins: [lgZoom, lgThumbnail, lgFullscreen, lgAutoplay],
+        //         speed: 500,
+        //         subHtml: '',
+        //         // ... другие настройки
+        //     });
+        // });
+
     </script>
 @endsection

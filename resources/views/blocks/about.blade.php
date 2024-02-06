@@ -48,7 +48,7 @@
                     <div class="col-lg-5 col-sm-12">
                         <!-- ttm_single_image-wrapper -->
                         <div class="ttm_single_image-wrapper">
-                            <img class="img-thumbnail" src="{{ asset('public/asset/images/123.jpg') }}" alt="">
+                            <img class="img-thumbnail" src="{{ asset('public/asset/images/markiz-about.jpg') }}" alt="markiz-about">
                         </div>
                         <!-- ttm_single_image-wrapper end -->
                     </div>
@@ -117,7 +117,7 @@
                     <div class="col-lg-5 col-sm-12">
                         <!-- ttm_single_image-wrapper -->
                         <div class="ttm_single_image-wrapper">
-                            <img class="img-thumbnail" src="{{ asset('public/asset/images/124.jpg') }}" alt="">
+                            <img class="img-thumbnail" src="{{ asset('public/asset/images/markiz-about-2.jpg') }}" alt="markiz-about-2">
                         </div>
                         <!-- ttm_single_image-wrapper end -->
                     </div>

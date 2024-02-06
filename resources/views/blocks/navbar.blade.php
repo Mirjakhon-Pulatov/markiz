@@ -36,12 +36,13 @@
                 <div class="site-header-menu-inner ttm-stickable-header">
                     <div class="container">
                         <!-- site-branding -->
-                        <div class="site-branding">
+                        <div class="site-branding" style="display: flex; justify-content: center; align-items: center">
                             <a class="home-link" href="{{ url('/') }}" title="Boldman" rel="home">
-                                <img id="logo-img" class="img-center"
+                                <img style="position: relative; top: -3px;" id="logo-img" class="img-center"
                                      src="{{ asset('public/asset/images/markiz-new-logo.png') }}" alt="logo-img">
                             </a>
-                        </div><!-- site-branding end -->
+                        </div>
+                        <!-- site-branding end -->
                         <!--site-navigation -->
                         <div id="site-navigation" class="site-navigation">
                             <div class="header-btn">

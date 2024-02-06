@@ -30,8 +30,7 @@
 @endsection
 @section('style')
 
-    <link rel="stylesheet" href="{{ asset('public/asset/css/lightgallery.min.css') }}"/>
-    <link rel="stylesheet" href="{{ asset('public/asset/css/lg-transitions.css') }}"/>
+    <link rel="stylesheet" href="{{ asset('public/asset/lightGallery/css/lightgallery-bundle.css') }}"/>
     <style>
         .picture {
             display: flex;
@@ -48,6 +47,9 @@
             height: 300px;
         }
 
+        .lg-sub-html {
+            display: none !important;
+        }
     </style>
 @endsection
 @section('content')
@@ -82,7 +84,7 @@
                                 <!-- content-inner -->
                                 @foreach($albums as $album2)
                                     <div class="content-inner">
-                                        <div class="picture">
+                                        <div class="picture" id="photos">
                                             @php
                                                 $getPhotos = \Illuminate\Support\Facades\DB::select("SELECT file FROM `gallerys` where album_id = '$album2->id' ");
                                             @endphp
@@ -92,7 +94,7 @@
                                                        href="{{ asset('public/uploads/gallery/photos/'.$photoitem->file) }}">
                                                         <img
                                                             src="{{ asset('public/uploads/gallery/thumbnails/'.$photoitem->file) }}"
-                                                            alt="image"></a>
+                                                            alt="{{$photoitem->file}}"></a>
                                                 @endforeach
                                             @endif
                                         </div><!-- row end -->
@@ -111,14 +113,25 @@
     </div><!--site-main end-->
 @endsection
 @section('scripts')
-    <script src="{{ asset('public/asset/js/lightgallery-all.min.js') }}"></script>
+    <script src="{{ asset('public/asset/lightGallery/js/lightgallery.min.js') }}"></script>
+    <script src="{{ asset('public/asset/lightGallery/js/lg-zoom.min.js') }}"></script>
+    <script src="{{ asset('public/asset/lightGallery/js/lg-thumbnail.min.js') }}"></script>
+    <script src="{{ asset('public/asset/lightGallery/js/lg-fullscreen.min.js') }}"></script>
+    <script src="{{ asset('public/asset/lightGallery/js/lg-autoplay.min.js') }}"></script>
     <script type="text/javascript">
-        $(document).ready(function () {
-            $('.picture').lightGallery({
-                mode: 'lg-slide-circular',
-                download: false
+        // Предположим, что у вас есть элементы с классом 'photos'
+        var elements = document.getElementsByClassName('picture');
+
+        // Проходимся по элементам (предполагая, что их может быть несколько)
+        Array.from(elements).forEach(function (element) {
+            lightGallery(element, {
+                plugins: [lgZoom, lgThumbnail, lgFullscreen, lgAutoplay],
+                speed: 500,
+                subHtml: '',
+                // ... другие настройки
             });
         });
+
     </script>
 
 @endsection
