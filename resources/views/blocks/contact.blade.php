@@ -127,25 +127,7 @@
                                 <li><i class="ttm-textcolor-skincolor ti ti-world"></i><a href="http://www.markiz.uz">http://www.markiz.uz</a>
                                 </li>
                             </ul>
-                            <div class="social-icons circle social-hover">
-                                <ul class="list-inline">
-                                    <li class="social-facebook"><a class="tooltip-top ttm-textcolor-skincolor"
-                                                                   target="_blank"
-                                                                   href="https://www.facebook.com/soyabonchi/"
-                                                                   data-tooltip="Facebook"><i
-                                                class="fa fa-facebook" aria-hidden="true"></i></a></li>
-                                    <li class="social-twitter"><a class="tooltip-top ttm-textcolor-skincolor"
-                                                                  target="_blank"
-                                                                  href="https://ok.ru/group/55172595056799"
-                                                                  data-tooltip="Odnoklassniki"><i
-                                                class="fa fa-odnoklassniki" aria-hidden="true"></i></a></li>
-                                    <li class="social-gplus"><a class=" tooltip-top ttm-textcolor-skincolor"
-                                                                target="_blank" href="https://vk.com/markiza_uz"
-                                                                data-tooltip="Vkontakte"><i
-                                                class="fa fa-vk" aria-hidden="true"></i></a></li>
 
-                                </ul>
-                            </div>
                         </div>
                     </div>
                 </div><!-- row end -->
