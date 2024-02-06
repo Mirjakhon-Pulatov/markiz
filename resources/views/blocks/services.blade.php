@@ -85,12 +85,12 @@
     </section>
 
     <section class="ttm-row bg-layer pt-0 pb-0 ttm-textcolor-white mt_175 res-991-mt-0 res-991-pt-0 clearfix" id="sect">
-        <div class="container" id="sect">
-            <div class="row row-equal-height" id="sect" >
+        <div class="container" >
+            <div class="row row-equal-height"  >
                 <div class="col-lg-6">
                     <div class=" ttm-bg ttm-left-span  pt-50 pb-45 pl-15">
                         <div class="ttm-col-wrapper-bg-layer ttm-bg-layer"></div>
-                        <div class="layer-content" id="sect" style="height: auto; word-spacing: 2px; letter-spacing: 1px;">
+                        <div class="layer-content" style="height: auto; word-spacing: 2px; letter-spacing: 1px;">
                             <h4>Своевременная и бережная доставка</h4>
                             <p class="text-justify">Перед погрузкой все изделия упаковываются, что предохраняет Ваш
                                 заказ от загрязнения при
@@ -107,7 +107,7 @@
                 </div>
                 <div class="col-lg-6">
                     <div
-                        class="  ttm-bg ttm-left-span  spacing-8 width-100 clearfix" id="sect">
+                        class="  ttm-bg ttm-left-span  spacing-8 width-100 clearfix">
                         <div class="ttm-col-wrapper-bg-layer ttm-bg-layer"></div>
                         <div class="layer-content" style="height: auto">
                             <div class="post-image" style="margin-top: 50px;">
