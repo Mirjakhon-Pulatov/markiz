@@ -34,7 +34,7 @@
                         <h3 class="widget-title">Страницы</h3>
                         <ul id="menu-footer-services">
                             <li><a href="{{ url('/services') }}">Услуги</a></li>
-                            <li><a href="{{ url('/nashi-raboty') }}">Наши работы</a></li>
+                            <li><a href="{{ url('/portfolio') }}">Наши работы</a></li>
                             <li><a href="{{ url('/about') }}">О нас</a></li>
                             <li><a href="{{ url('/contact') }}">Контакты</a></li>
 

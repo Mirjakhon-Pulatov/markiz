@@ -64,7 +64,7 @@
 
                                 <ul class="dropdown">
                                     <li>
-                                        <a style="color: {{request()->is('') ? 'orange' : ''}}; cursor: pointer">Каталог</a>
+                                        <a style="cursor: pointer">Каталог</a>
                                         @php
                                             $services = \Illuminate\Support\Facades\DB::select("Select `id`,`title`,`slug` from services");
                                         @endphp
@@ -81,8 +81,9 @@
                                     </li>
                                     <li><a href="{{ url('/services') }}"
                                            style="color: {{request()->is('services') ? '#FF7D27' : ''}}">Услуги</a></li>
-                                    <li><a href="{{ url('/nashi-raboty') }}"
-                                           style="color: {{request()->is('gallery') ? '#FF7D27' : ''}}">Наши работы</a></li>
+                                    <li><a href="{{ url('/portfolio') }}"
+                                           style="color: {{request()->is('portfolio') ? '#FF7D27' : ''}}">Наши
+                                            работы</a></li>
                                     <li><a href="{{ url('/about') }}"
                                            style="color: {{request()->is('about') ? '#FF7D27' : ''}}">О нас</a></li>
                                     <li><a href="{{ url('/contact') }}"
