@@ -8,7 +8,7 @@
     <meta name="description" content="Маркизы, перголы, шатры, зонты, навесы и тенты в Ташкенте">
     <meta name="author" content="https://www.markiz.uz/">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-    <title>Галерея | Markiz.uz</title>
+    <title>Наши работы | Markiz.uz</title>
 
     <!-- Facebook Meta Tags -->
     <meta property="og:url" content="https://www.markiz.uz">
